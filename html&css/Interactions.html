@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Interactions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form>
+        <div>
+            <h4>Login example</h4>
+            <input type="test" placeholder="Your Name" name="user_name">
+            <input type="password" placeholder="password" name="user_password">
+            <input type="submit">
+        </div>
+
+        <div>
+            <h4>Multiple Choice</h4>
+            <label for="myBrowser">Choose a Color:</label>
+            <input name="color_red" type="radio" value="red"> Red
+            <input name="color_red" type="radio" value="green"> Green
+            <input name="color_red" type="radio" value="blue"> Blue
+            <input name="color_red" type="radio" value="other"> Other
+        </div>
+
+        <div>
+            <h4>Drop-Down-Menu</h4>
+            <label for="myBrowser">Gib einen Browsernamen ein:</label>
+            <input list="browsers" id="myBrowser" name="myBrowser" />
+            <datalist id="browsers">
+              <option value="Chrome">
+              <option value="Firefox">
+              <option value="Internet Explorer">
+              <option value="Opera">
+              <option value="Safari">
+            </datalist>
+        </div>
+    </form>
+</body>

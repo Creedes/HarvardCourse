@@ -1,0 +1,144 @@
+/***Responsive Design*/
+
+/*
+viewport
+  - screensize
+  in HTML::
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+Media Queries
+  Media Types: print, Screen, ...
+  Media Features: height, width, orientation, ...
+*/
+
+@media (min-width: 600px) {
+  body {
+    background-color:rgb(199, 196, 153);
+  }
+}
+@media (max-width: 599px) {
+  body {
+    background-color:rgb(216, 133, 133);
+  }
+}
+
+/***Responsive Design*/
+/*Flexbox*/
+#container {
+  display: flex;
+  flex-wrap: wrap; /*Wrap around the elments in the next line, if not enough space is there  */
+  background-color: blanchedalmond;
+
+}
+
+#container > div {
+ background-color: darkslategrey;
+ font-size: 20px;
+ margin: 20px;
+ padding: 20px;
+ width: 200px;
+ height: 200px;
+}
+
+/***Responsive Design*/
+/*Grid*/
+
+#grid{
+  display: grid;
+  column-gap: 20px;
+  row-gap: 10px;
+  grid-template-columns: 200px 200px auto auto;
+
+  background-color:aquamarine;
+  padding: 20px;
+}
+
+.grid-item {
+ background-color:chocolate;
+font-size: 20px;
+padding: 20px;
+text-align: center;
+}
+
+
+
+h1 {
+  color: rgb(5, 5, 53);
+}
+
+/*ID: fuer EIN Objekt */
+#foo {
+  color: rgb(6, 63, 6);
+}
+
+#fooTwo {
+  color: rgb(64, 64, 100);
+}
+
+/*Class: fuer eine Klasse an Objekten */
+.header{
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+/*only li (listitem) in ul (unordert lists*/
+ul > li {
+    color: blue;
+}
+h2 {
+  color: rgb(10, 10, 99);
+}
+
+h3 {
+  color: rgb(64, 64, 100);
+}
+
+h4 {
+  color: rgb(18, 18, 148);
+}
+
+h5 {
+  color: rgb(42, 42, 161);
+}
+
+h6 {
+  color: rgb(64, 64, 206);
+}
+
+/* div {
+  background-color: rgb(200, 200, 200);
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  margin: 10px;
+} */
+
+table {
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  border-collapse: separate;
+}
+td,
+th {
+  border-color: black;
+  border-style: inset;
+  border-radius: 10px;
+  padding: 5px;
+}
+/*only a special attribute*/
+a[href="https://google.com"] {
+    color: red;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  font-size: 24px;
+  background-color:rgb(5, 5, 53);
+  color:rgb(200, 200, 200);
+  padding: 10px;
+
+}
+
+button:hover {
+  background-color: blueviolet;
+}
