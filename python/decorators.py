@@ -1,0 +1,17 @@
+#Funktionen, die andere Funktionen als Parameter bekommen koennen!
+#function programmable
+
+def announce(f):
+    def wrapper():
+        print("About to run the function...")
+        f()
+        print("Done with the function")
+    return wrapper
+
+@announce
+def hello():
+    print("Hello, world")
+
+announce(hello())
+hello()
+
